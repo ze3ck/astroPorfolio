@@ -1,1 +1,1 @@
-![landingpage](public/projects/ze3ckpor.webp)
+![landingpage](public/landingAstro.png)
