@@ -1,0 +1,91 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Badge from "../components/Badge.astro";
+import LinkedInIcon from "../icons/LinkedIn.astro";
+import SocialPill from "../icons/SocialPill.astro";
+import GitHubIcon from "../icons/Github.astro";
+import InstagramIcon from "../icons/Instagram.astro";
+import CorreoIcon from "../icons/Correo.astro";
+import Experience from "../components/Experience.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import Briefcase from "../icons/Briefcase.astro";
+import CodeIcon from "../icons/Code.astro";
+import Projects from "../components/Project.astro";
+---
+
+<Layout
+  title="Porfolio de Bastian Leyton Mardones - Ingeniero en Informática"
+  description="Estudiante de ingeniería en informática que está buscando oportunidades laborales para crecer como profesional en las áreas de ciberseguridad, big data y desarrollo"
+>
+  <main class="px-4">
+    <SectionContainer class="py-44 pb-32">
+      <img
+        class="rounded-full size-12 mb-4"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnhWF5cMISvKRYFOE7R6S3TRPuuqOQVgnI0dOIJJysPg&s"
+        alt="ze3ck photo"
+      />
+      <h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-12">
+        Hey, soy Ze3ck ...
+        <a
+          href="https://www.linkedin.com/in/bastian-leyton-mardones/"
+          target="_blank"
+          rel="noopener"
+          class="flex justify-center items-center"
+        >
+          <Badge>Disponible para trabajar</Badge>
+        </a>
+      </h1>
+      <h2 class="text-xl lg:text-2xl text-pretty max-w-[700px]">
+        <span
+          >... Bastian Leyton Mardones, estudiante de útlimo año de Ingeniería
+          en Informática con especial interés en</span
+        ><span class="text-yellow-200/90">
+          Ciberseguridad, Big Data y el Desarrollo.</span
+        >
+        <span class="text-red-200/90">De El Salvador, Chile 🇨🇱.</span> Me estoy especializando
+        en Analista de Ciberseguridad
+      </h2>
+
+      <!-- Seccion de botones e íconos -->
+      <nav class="flex gap-4 mt-12 flex-wrap">
+        <SocialPill href="https://www.linkedin.com/in/bastian-leyton-mardones/">
+          <LinkedInIcon class="size-4 md:size-6" />
+          LinkedIn
+        </SocialPill>
+
+        <SocialPill href="https://www.github.com/ze3ck">
+          <GitHubIcon class="size-4 md:size-6" />
+          GitHub
+        </SocialPill>
+
+        <SocialPill href="https://www.instagram.com/b.leytonm/">
+          <InstagramIcon class="size-4 md:size-6" />
+          Instagram
+        </SocialPill>
+
+        <SocialPill href="mailto:bastianleyton0.8@gmail.com">
+          <CorreoIcon class="size-4 md:size-6" />
+          bastianleyton0.8@gmail.com
+        </SocialPill>
+      </nav>
+    </SectionContainer>
+
+    <!-- Experiencia Laboral -->
+    <SectionContainer id="experiencia">
+      <h2 class="text-3xl font-semibold mb-7 flex gap-x-3 items-center">
+        <Briefcase class="size-7" />
+        Experiencia Laboral
+      </h2>
+      <Experience />
+    </SectionContainer>
+
+    <!-- Seccion de Proyectos -->
+    <SectionContainer id="proyectos">
+      <h2 class="text-3xl font-semibold mb-7 flex gap-x-3 items-center">
+        <CodeIcon class="size-7"/>
+        Proyectos
+      </h2>
+      <Projects />
+    </SectionContainer>
+  </main>
+</Layout>
